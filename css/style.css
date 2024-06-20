@@ -44,11 +44,11 @@ body {
     background-color: var(--background-color);
     font-family: kanit-light;
 }
-.dark{
+.dark{ /* FEEDBACK body.dark is veiliger */
     --text-color: rgb(255, 255, 255);
     --nav-color: #707070;
     --background-color: #272b37;
-    transition: all 0.5s;
+    transition: all 0.5s; /* FEEDBACK hoort thuis in de body selector */
 }
 
 
@@ -64,7 +64,7 @@ header {
     width: 100%;
     position: fixed;
     color: var(--text-color);
-    font-family: Marker Felt;
+    font-family: Marker Felt; /* FIXME gebruik naam die bovenaan is aangemaakt */
 }
 
 ul.breadcrumb {
@@ -77,7 +77,7 @@ ul.breadcrumb li {
 }
 ul.breadcrumb li+li:before {
     padding: 4px;
-    color: black;
+    color: black; /*FEEDBACK gebruik variabelen voor kleur*/
     content: "/\00a0";
 }
 ul.breadcrumb li a:hover {
@@ -185,7 +185,7 @@ h1 {
     top: 20px;
     right: 45px;
 }
-span {
+span { /* FEEDBACK niet goed! Dit wordt op alle span elementen toegepast */
     position: absolute;
     top: 20px;
     right: 45px;
@@ -193,13 +193,13 @@ span {
 
 main{
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); /* FEEDBACK cadeautje, tracht in de toekomst spontaan moderne technologieën aan te grijpen */
     margin-top: 10vw;
 }
 main a {
     display: block;
     margin: 0 auto;
-    font-family: Marker Felt;
+    font-family: Marker Felt; /* FIXME gebruik naam die bovenaan is aangemaakt, namen uit twee delen steeds tussen "aanhalingstekens" */
     color: var(--text-color);
     text-align: left;
     padding-left: 10%;
